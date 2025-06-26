@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1320px;
+  padding: 0 15px;
+  margin: auto;
+  
+}
+body{
+  background: #1c1f24;
+
+}
+
+.contact_form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding-bottom: 120px;
+  gap: 30px;
+}
+.form_section {
+  padding: 0 20px;
+}
+.contact_info {
+  margin-bottom: 40px;
+}
+
+.contact_info h2 {
+  color: red;
+  text-align: left;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.mobile_no_section span,
+.email_section span {
+  display: inline-block;
+  background: none;
+  color: white  ;
+  font-weight: 200;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+.mobile_no_section a,
+.email_section a {
+  display: inline-block;
+  color: #989ca2;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0;
+  margin: 0px 0px 0px 16px;
+}
+.mobile_no_section a:hover,
+.email_section a:hover {
+  color: red;
+}
+.email_section {
+  margin-top: 8px;
+}
+form input,
+textarea {
+  background: transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.438);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 0px 20px;
+  height: 50px;
+  width: 100%;
+  font-size: 15px;
+  color: white ;
+}
+
+form input:focus,
+form textarea:focus {
+  border: none;
+  outline: 2px solid red;
+  box-shadow:  0px 0px  25px red;
+    transition: 0.4s box-shadow;
+
+}
+form input::placeholder,
+textarea::placeholder{
+  color:white;
+  font-weight: 200;
+}
+textarea {
+  color: white;
+  padding: 15px 20px 0px 20px;
+  height: 120px;
+  width: 100%;
+}
+
+.submit_button {
+  background-color: red;
+  border-radius: 50px;
+  transition: 0.5s background;
+  border: 2px solid red;
+  font-size: 20px;
+  color: white;
+  width: 100%;
+  padding: 15px 40px 15px 40px;
+  letter-spacing: 1px;
+  text-wrap: nowrap;
+  transition: 0.5s color;
+  font-weight: bold;
+  text-align: center;
+}
+
+.submit_button:hover {
+  background: transparent;
+  transition: 0.6s color;
+  cursor: pointer;
+  color: red;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+.contact_img {
+  padding: 55px 20px;
+}
+
+.contact_img img {
+  width: 100%;
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+  filter: drop-shadow(0px 0px 4px red);
+
+}
+.contact_img img:hover {
+  box-shadow:  0px 0px  25px red;
+  border-radius: 100px;
+    transition: 0.5s box-shadow;
+}
