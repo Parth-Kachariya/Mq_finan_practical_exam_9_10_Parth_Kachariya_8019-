@@ -5,16 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>detail</title>
     <style>
-        .box{
-            max-width: 800px;
-            margin: auto;
-            text-align: center;
-        }
-        h2{
-            margin-top: 100px;
-        }
+      .box {
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+      }
+      h2 {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+      }
+      .btn{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap:wrap ;
+      }
       a {
-        width: 100;
+        margin-bottom: 15px;
         text-decoration: none;
         padding: 15px;
         border-radius: 20px;
@@ -23,8 +31,9 @@
         font-weight: bold;
         font-size: 20px;
         margin-left: 20px;
+        text-wrap: nowrap;
       }
-     a:hover {
+      a:hover {
         background-color: black;
         color: red;
         transition: all 0.3s;
@@ -33,9 +42,12 @@
   </head>
   <body>
     <div class="box">
-        <h2>Media-Query Final Exam</h2> <br>
-      <a href="./blog_post/index.html" target="_blank">blog-post</a>
-      <a href="./contact_form/index.html" target="_blank"> contact-form</a>
+      <h2>Media-Query Final Exam</h2>
+      <br />
+      <div class="btn">
+        <a href="./blog_post/index.html" target="_blank">blog-post</a>
+        <a href="./contact_form/index.html" target="_blank"> contact-form</a>
+      </div>
     </div>
   </body>
 </html>
